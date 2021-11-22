@@ -20,5 +20,161 @@ Ans1.
     
     
     
-    
-    
+Q2. Write a program to reverse an array in place? In place means you cannot create a new array. You have to update the original array.    
+
+Ans.
+          def reverse_arr(arr):
+              print("Reverse of given array is :",arr[::-1])
+
+          reverse_arr([11,12,13,21,22,23])
+          
+          
+          Output :- Reverse of given array is : [23, 22, 21, 13, 12, 11]
+          
+          
+          
+          
+          
+Q3. Write a program to check if two strings are a rotation of each other?
+
+Ans3.
+          str1 = input("Enter first string :")
+          str2 = input("Enter second string :")
+          n1 = len(str1)
+          n2 = len(str2)
+          concat = ''
+          if n1 != n2:
+              print("The two strings are not rotation of each other")
+          else:
+              concat = str1+str1
+              if str2 in concat:
+                  print("The two strings are rotation of each other")
+              else:
+                  print("The two strings are not rotation of each other")
+                  
+                  
+          
+          Input1 :-  Enter first string :ABCDE
+                     Enter second string :DEACB
+          Output1 :- The two strings are not rotation of each other
+          
+          
+          Input2 :-  Enter first string :ABCDE
+                     Enter second string :CDEAB
+          Output2 :- The two strings are rotation of each other
+          
+          
+          Input3 :-  Enter first string :ABCDE
+                     Enter second string :CDE
+          Output3 :- The two strings are not rotation of each other
+          
+          
+          
+          
+          
+
+Q4. Write a program to print the first non-repeated character from a string?
+
+Ans4.
+          def FirstNonRepeatedChar(str):
+              for i in str:
+                  count=0
+                  for j in str:
+                      if i==j:
+                          count+=1
+                      if count>1:
+                          break
+                  if count==1:
+                      return i
+                      
+          FirstNonRepeatedChar("edyoda is a platform to learn everyday ")
+          
+          Output :-  'i'
+          
+          
+          
+
+
+Q5. Read about the Tower of Hanoi algorithm. Write a program to implement it.
+
+Ans5. 
+          def TowerOfHanoi(n , tower1, tower2, tower3):
+              if n == 1:
+                  print("Move disk 1 from rod",tower1,"to rod",tower2)
+                  return
+              TowerOfHanoi(n-1, tower1, tower3, tower2)
+              print("Move disk",n,"from rod",tower1,"to rod",tower2)
+              TowerOfHanoi(n-1, tower3, tower2, tower1)
+          
+          TowerOfHanoi(3,'A','B','C')
+          
+          Output :- Move disk 1 from rod A to rod B
+                    Move disk 2 from rod A to rod C
+                    Move disk 1 from rod B to rod C
+                    Move disk 3 from rod A to rod B
+                    Move disk 1 from rod C to rod A
+                    Move disk 2 from rod C to rod B
+                    Move disk 1 from rod A to rod B
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+          
+          
